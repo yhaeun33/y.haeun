@@ -1,12 +1,20 @@
 (function () {
-  var DATA = window.WORKS || {};
+  var RAW = window.WORKS || {};
+  // 광고·배너 = 기획전(promo) + 광고(ad). 기획전은 하나의 세부 탭으로 묶어요.
+  var DATA = {
+    web: RAW.web || [],
+    ad: (RAW.promo || []).map(function (it) { return Object.assign({}, it, { tab: '기획전', kind: '기획전' }); })
+      .concat((RAW.ad || []).map(function (it) { return Object.assign({}, it, { kind: '광고' }); })),
+    ai: RAW.ai || []
+  };
+  // Old deep links from index.html (work.html#promo) land on the 기획전 tab.
+  var HASH_ALIAS = { promo: { cat: 'ad', tab: '기획전' } };
   var PAGE = 24;
   var TAB_ORDER = {
     web: ['UIUX 리뉴얼', '앱 디자인', '실서버 반영 시안', '제안시안', '개인작업'],
-    promo: ['모바일', 'PC'],
-    ad: ['골프', '공기관', '기타']
+    ad: ['기획전', '골프', '공기관', '기타']
   };
-  var LABEL = { promo: '기획전', ai: 'AI 이미지', ad: '광고' };
+  var LABEL = { ai: 'AI 이미지', ad: '광고' };
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -61,19 +69,24 @@
     if (tabs.length) {
       ['All'].concat(tabs).forEach(function (t) {
         var n = t === 'All' ? items.length : items.filter(function (it) { return it.tab === t; }).length;
-        var b = el('button', 'filter', t + ' ' + n);
+        var b = el('button', 'filter', t);
+        b.appendChild(el('sup', null, String(n)));
         b.type = 'button';
+        b.setAttribute('data-tab', t);
         b.setAttribute('aria-pressed', String(t === 'All'));
-        b.addEventListener('click', function () {
-          state.tab = t; state.shown = PAGE;
-          tabsBox.querySelectorAll('.filter').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
-          render();
-        });
+        b.addEventListener('click', function () { selectTab(t); });
         tabsBox.appendChild(b);
       });
     } else {
       tabsBox.remove();
     }
+
+    function selectTab(t) {
+      state.tab = t; state.shown = PAGE;
+      tabsBox.querySelectorAll('.filter').forEach(function (x) { x.setAttribute('aria-pressed', String(x.getAttribute('data-tab') === t)); });
+      render();
+    }
+    sec.selectTab = selectTab;
 
     function tile(it, i, list) {
       var isWeb = cat === 'web';
@@ -116,7 +129,7 @@
     function render() {
       var list = state.tab === 'All' ? items : items.filter(function (it) { return it.tab === state.tab; });
       list = list.map(function (it, i) {
-        return Object.assign({}, it, { alt: it.title || ((LABEL[cat] || '') + ' 작업 ' + (i + 1)) });
+        return Object.assign({}, it, { alt: it.title || ((it.kind || LABEL[cat] || '') + ' 작업 ' + (i + 1)) });
       });
       grid.innerHTML = '';
       var frag = document.createDocumentFragment();
@@ -145,11 +158,16 @@
   filters.forEach(function (b) {
     b.addEventListener('click', function () { applyFilter(b.getAttribute('data-filter')); });
   });
-  // Deep link from index (work.html#promo): show that section only
+  // Deep link from index (work.html#ad, #promo): show that section only
   var hash = location.hash.replace('#', '');
-  if (DATA[hash]) {
-    applyFilter(hash);
-    var target = document.getElementById(hash);
-    if (target) setTimeout(function () { target.scrollIntoView(); }, 0);
+  var alias = HASH_ALIAS[hash];
+  var cat = alias ? alias.cat : hash;
+  if (DATA[cat]) {
+    applyFilter(cat);
+    var target = document.getElementById(cat);
+    if (target) {
+      if (alias && target.selectTab) target.selectTab(alias.tab);
+      setTimeout(function () { target.scrollIntoView(); }, 0);
+    }
   }
 })();

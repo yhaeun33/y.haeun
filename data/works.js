@@ -12,7 +12,7 @@ window.WORKS = {
    "id": "web-074",
    "thumb": "images/web/web-074.jpg",
    "title": "메이저월드 광고대행사 홈페이지 AD 원페이지",
-   "link": "https://www.figma.com/design/KNoDoESCMm7L8D1d3japGe/-Major-World--Ad_One_Page?node-id=440-2&t=0f8ngWaxEsWYXjXf-1",
+   "link": "https://www.figma.com/proto/KNoDoESCMm7L8D1d3japGe/-Major-World--Ad_One_Page?node-id=2535-1034&p=f&viewport=-962%2C-1792%2C0.23&t=giEBFOzkwuWs481W-1&scaling=min-zoom&content-scaling=fixed&page-id=440%3A2",
    "tab": "실서버 반영 시안"
   },
   {
