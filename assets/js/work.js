@@ -2,7 +2,7 @@
   var DATA = window.WORKS || {};
   var PAGE = 24;
   var TAB_ORDER = {
-    web: ['UIUX 리뉴얼', '실서버 반영 시안', '제안시안', '개인작업'],
+    web: ['UIUX 리뉴얼', '앱 디자인', '실서버 반영 시안', '제안시안', '개인작업'],
     promo: ['모바일', 'PC'],
     ad: ['골프', '공기관', '기타']
   };
@@ -80,7 +80,9 @@
       var t;
       if (isWeb && it.link) {
         t = el('a', 'tile');
-        t.href = it.link; t.target = '_blank'; t.rel = 'noopener';
+        // App items open the store that matches the visitor's device.
+        t.href = (it.link_android && /Android/i.test(navigator.userAgent)) ? it.link_android : it.link;
+        t.target = '_blank'; t.rel = 'noopener';
       } else {
         t = el('button', 'tile' + (isWeb ? '' : ' tall'));
         t.type = 'button';
@@ -98,7 +100,9 @@
         meta.appendChild(el('b', null, it.title || '웹사이트 작업'));
         var host = '';
         if (it.link) {
-          host = /figma\.com/.test(it.link) ? 'Figma 프로토타입 열기 ↗'
+          host = it.link_android ? '앱스토어 · 구글플레이 ↗'
+            : /figma\.com\/design/.test(it.link) ? 'Figma 디자인 보기 ↗'
+            : /figma\.com/.test(it.link) ? 'Figma 프로토타입 열기 ↗'
             : /creatorlink\.net/.test(it.link) ? '상세 시안 보기 ↗' : '라이브 사이트 ↗';
         }
         if (host) meta.appendChild(el('small', null, host));

@@ -1,6 +1,21 @@
 window.WORKS = {
  "web": [
   {
+   "id": "web-073",
+   "thumb": "images/web/web-073.jpg",
+   "title": "리카타 핏메이드X 골프워치 앱 디자인",
+   "link": "https://apps.apple.com/kr/app/fitmade-link/id6775663331",
+   "link_android": "https://play.google.com/store/apps/details?id=com.fitmade.app",
+   "tab": "앱 디자인"
+  },
+  {
+   "id": "web-074",
+   "thumb": "images/web/web-074.jpg",
+   "title": "메이저월드 광고대행사 홈페이지 AD 원페이지",
+   "link": "https://www.figma.com/design/KNoDoESCMm7L8D1d3japGe/-Major-World--Ad_One_Page?node-id=440-2&t=0f8ngWaxEsWYXjXf-1",
+   "tab": "실서버 반영 시안"
+  },
+  {
    "id": "web-001",
    "thumb": "images/web/web-001.jpg",
    "title": "딜팡 브랜드관 UI 리뉴얼 PC / M",
