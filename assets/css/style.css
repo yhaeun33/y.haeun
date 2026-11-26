@@ -118,6 +118,15 @@ a:hover{opacity:.88}
 .filters{display:flex;flex-wrap:wrap;gap:10px}
 .filter{min-height:44px;padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14px;font-weight:600;font-family:inherit;cursor:pointer}
 .filter[aria-pressed="true"]{background:var(--primary);border-color:transparent;color:#fff}
+/* Top filters: big-type index "ALL / Web / 광고·배너 / AI 이미지" */
+.filters{align-items:baseline;gap:4px 0}
+.filters .filter{min-height:48px;padding:4px 0;border:0;border-radius:0;background:none;font-family:var(--display);font-size:34px;font-weight:700;letter-spacing:-.01em;color:var(--muted);opacity:.55;transition:opacity .15s,color .15s}
+.filters .filter:hover{opacity:.85}
+.filters .filter sup{font-size:.4em;font-weight:500;margin-left:4px}
+.filters .filter[aria-pressed="true"]{background:none;color:var(--ink);opacity:1}
+.filters .filter[aria-pressed="true"] sup{color:var(--primary)}
+.filters .sep{font-family:var(--display);font-size:34px;color:var(--line);margin:0 14px}
+@media (max-width:860px){.filters .filter,.filters .sep{font-size:24px}.filters .sep{margin:0 8px}}
 .work-section{padding:72px var(--gutter) 24px;scroll-margin-top:68px}
 .work-head{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;margin-bottom:8px}
 .work-head h2{margin:0;font-family:var(--display);font-size:40px;line-height:1.25}
@@ -169,3 +178,4 @@ a:hover{opacity:.88}
   .lb-prev,.lb-next{top:auto;bottom:16px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.work-hero p,.work-head p{word-break:keep-all}
