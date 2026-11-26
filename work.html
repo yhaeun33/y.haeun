@@ -8,44 +8,45 @@
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <nav class="nav" aria-label="주 메뉴">
-  <a class="brand" href="index.html">Haeun<span>.</span></a>
+  <a class="brand" href="index.html">윤하은 <span>Yoon Ha Eun</span></a>
   <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-links">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
   <div class="nav-links" id="nav-links">
     <a href="index.html">Home</a>
-    <a href="work.html" aria-current="page">Work</a>
+    <a href="work.html" aria-current="page">Work <sup>271</sup></a>
     <a href="index.html#contact">Contact</a>
   </div>
 </nav>
 
 <main>
-<header class="work-hero mesh">
-  <div class="eyebrow">Work</div>
-  <h1>능수능란한 작업들</h1>
-  <p>웹사이트 UIUX, 기획전, AI 이미지, 광고 디자인까지. Adriot의 작업물을 한곳에 모았습니다.</p>
+<header class="work-hero wrap">
+  <p class="label">Work</p>
+  <h1>능수능란한 작업들 <sup>271</sup></h1>
+  <p class="work-intro">웹사이트 UIUX, 기획전, AI 이미지, 광고 디자인까지. Adriot의 작업물을 한곳에 모았습니다.</p>
   <div class="filters" role="group" aria-label="분야 필터">
-    <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-    <button class="filter" type="button" data-filter="web" aria-pressed="false">Web Design</button>
-    <button class="filter" type="button" data-filter="promo" aria-pressed="false">기획전</button>
-    <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI 이미지</button>
-    <button class="filter" type="button" data-filter="ad" aria-pressed="false">광고</button>
+    <button class="filter" type="button" data-filter="all" aria-pressed="true">All <sup>271</sup></button>
+    <button class="filter" type="button" data-filter="web" aria-pressed="false">Web Design <sup>72</sup></button>
+    <button class="filter" type="button" data-filter="promo" aria-pressed="false">기획전 <sup>57</sup></button>
+    <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI 이미지 <sup>48</sup></button>
+    <button class="filter" type="button" data-filter="ad" aria-pressed="false">광고 <sup>94</sup></button>
   </div>
 </header>
 
 <section class="work-section" id="web" data-cat="web">
   <div class="work-head">
     <div>
-      <div class="eyebrow">Web Design</div>
+      <div class="label">Web Design</div>
       <h2>웹사이트 UIUX 디자인</h2>
       <p>딜팡 리뉴얼, 실서버 반영 시안, 공공기관 반응형 제안시안, 개인 리디자인까지.</p>
     </div>
+    <span class="num">72</span>
   </div>
   <div class="subtabs" role="group" aria-label="웹사이트 분류"></div>
   <p class="count" aria-live="polite"></p>
@@ -56,10 +57,11 @@
 <section class="work-section" id="promo" data-cat="promo">
   <div class="work-head">
     <div>
-      <div class="eyebrow">Promotion</div>
+      <div class="label">Promotion</div>
       <h2>기획전 디자인</h2>
       <p>프로모션 기획전 페이지 작업물 · 모바일 / PC</p>
     </div>
+    <span class="num">57</span>
   </div>
   <div class="subtabs" role="group" aria-label="기획전 분류"></div>
   <p class="count" aria-live="polite"></p>
@@ -70,10 +72,11 @@
 <section class="work-section" id="ai" data-cat="ai">
   <div class="work-head">
     <div>
-      <div class="eyebrow">AI Image</div>
+      <div class="label">AI Image</div>
       <h2>AI 이미지 제작</h2>
       <p>프롬프트 설계와 후보정으로 만든 비주얼</p>
     </div>
+    <span class="num">48</span>
   </div>
   <div class="subtabs" role="group" aria-label="AI 이미지 분류"></div>
   <p class="count" aria-live="polite"></p>
@@ -81,13 +84,14 @@
   <div class="more-wrap"></div>
 </section>
 
-<section class="work-section" id="ad" data-cat="ad" style="padding-bottom:96px">
+<section class="work-section" id="ad" data-cat="ad">
   <div class="work-head">
     <div>
-      <div class="eyebrow">Advertising</div>
+      <div class="label">Advertising</div>
       <h2>광고 디자인</h2>
       <p>골프 · 공공기관 광고 배너와 SNS 콘텐츠</p>
     </div>
+    <span class="num">94</span>
   </div>
   <div class="subtabs" role="group" aria-label="광고 분류"></div>
   <p class="count" aria-live="polite"></p>
@@ -96,7 +100,7 @@
 </section>
 </main>
 
-<footer class="footer">© 2026 Haeun · Adriot. All rights reserved.</footer>
+<footer class="footer wrap"><span>© 2026 Haeun · Adriot. All rights reserved.</span><a href="index.html#contact">Contact →</a></footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="이미지 크게 보기">
   <button class="lb-btn lb-close" type="button" aria-label="닫기">
