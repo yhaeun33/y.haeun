@@ -52,6 +52,9 @@
     else if (e.key === 'ArrowRight') lbShow(lbIndex + 1);
   });
 
+  var MAX_RATIO = 2;   // tallest thumbnail shown in the masonry grid (height / width)
+  var layouts = [];
+
   // ---------- Sections ----------
   document.querySelectorAll('.work-section').forEach(function (sec) {
     var cat = sec.getAttribute('data-cat');
@@ -95,11 +98,13 @@
         t.href = (it.link_android && /Android/i.test(navigator.userAgent)) ? it.link_android : it.link;
         t.target = '_blank'; t.rel = 'noopener';
       } else {
-        t = el('button', 'tile' + (isWeb ? '' : ' tall'));
+        t = el('button', 'tile');
         t.type = 'button';
         t.addEventListener('click', function () { lbOpen(list, i); });
       }
       var ph = el('div', 'ph');
+      // Non-web works keep their own proportions (masonry); very long pages are capped.
+      if (!isWeb && it.ratio) ph.style.aspectRatio = '1 / ' + Math.min(it.ratio, MAX_RATIO);
       var img = el('img');
       img.src = it.thumb; img.loading = 'lazy'; img.decoding = 'async';
       img.alt = it.alt;
@@ -129,14 +134,46 @@
       list = list.map(function (it, i) {
         return Object.assign({}, it, { alt: it.title || ((it.kind || LABEL[cat] || '') + ' 작업 ' + (i + 1)) });
       });
-      grid.innerHTML = '';
-      var frag = document.createDocumentFragment();
       // Show every work at once; images are lazy-loaded so scrolling stays light.
-      list.forEach(function (it, i) { frag.appendChild(tile(it, i, list)); });
-      grid.appendChild(frag);
+      tiles = list.map(function (it, i) { return { node: tile(it, i, list), ratio: Math.min(it.ratio || 1, MAX_RATIO) }; });
+      cols = 0;
+      layout();
       countEl.textContent = list.length + ' projects';
     }
+
+    var tiles = [], cols = 0;
+    function layout() {
+      if (cat === 'web') {
+        grid.innerHTML = '';
+        tiles.forEach(function (t) { grid.appendChild(t.node); });
+        return;
+      }
+      var n = columnCount();
+      if (n === cols && grid.childNodes.length) return;
+      cols = n;
+      grid.innerHTML = '';
+      grid.className = 'gallery masonry';
+      var colEls = [], heights = [];
+      for (var c = 0; c < n; c++) { colEls.push(grid.appendChild(el('div', 'mcol'))); heights.push(0); }
+      // Place each work in the currently shortest column, in list order.
+      tiles.forEach(function (t) {
+        var k = heights.indexOf(Math.min.apply(null, heights));
+        colEls[k].appendChild(t.node);
+        heights[k] += t.ratio + 0.03;
+      });
+    }
+    layouts.push(layout);
     render();
+  });
+
+  function columnCount() {
+    var w = window.innerWidth;
+    return w < 600 ? 2 : w < 900 ? 3 : w < 1240 ? 4 : 5;
+  }
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () { layouts.forEach(function (f) { f(); }); }, 150);
   });
 
   // ---------- Top filters ----------
