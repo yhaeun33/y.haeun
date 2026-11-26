@@ -61,8 +61,7 @@
     if (tabs.length) {
       ['All'].concat(tabs).forEach(function (t) {
         var n = t === 'All' ? items.length : items.filter(function (it) { return it.tab === t; }).length;
-        var b = el('button', 'filter', t + ' ');
-        b.appendChild(el('sup', null, String(n)));
+        var b = el('button', 'filter', t + ' ' + n);
         b.type = 'button';
         b.setAttribute('aria-pressed', String(t === 'All'));
         b.addEventListener('click', function () {
@@ -92,7 +91,7 @@
       img.src = it.thumb; img.loading = 'lazy'; img.decoding = 'async';
       img.alt = it.alt;
       ph.appendChild(img);
-      ph.appendChild(el('span', 'tag', (it.id || '').toUpperCase() + (it.tab ? ' · ' + it.tab : '')));
+      if (it.tab) ph.appendChild(el('span', 'tag', it.tab));
       t.appendChild(ph);
       if (isWeb) {
         var meta = el('div', 'meta');
@@ -122,7 +121,7 @@
       countEl.textContent = Math.min(state.shown, list.length) + ' / ' + list.length + ' projects';
       moreWrap.innerHTML = '';
       if (state.shown < list.length) {
-        var more = el('button', 'more', '더보기 (' + Math.min(state.shown, list.length) + ' / ' + list.length + ')');
+        var more = el('button', 'btn btn-ghost', '더보기 (' + Math.min(state.shown, list.length) + ' / ' + list.length + ')');
         more.type = 'button';
         more.addEventListener('click', function () { state.shown += PAGE; render(); });
         moreWrap.appendChild(more);
