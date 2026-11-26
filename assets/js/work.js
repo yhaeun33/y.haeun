@@ -9,7 +9,6 @@
   };
   // Old deep links from index.html (work.html#promo) land on the 기획전 tab.
   var HASH_ALIAS = { promo: { cat: 'ad', tab: '기획전' } };
-  var PAGE = 24;
   var TAB_ORDER = {
     web: ['UIUX 리뉴얼', '앱 디자인', '실서버 반영 시안', '제안시안', '개인작업'],
     ad: ['기획전', '골프', '공기관', '기타']
@@ -60,8 +59,7 @@
     var tabsBox = sec.querySelector('.subtabs');
     var grid = sec.querySelector('.gallery');
     var countEl = sec.querySelector('.count');
-    var moreWrap = sec.querySelector('.more-wrap');
-    var state = { tab: 'All', shown: PAGE };
+    var state = { tab: 'All' };
 
     var tabs = (TAB_ORDER[cat] || []).filter(function (t) {
       return items.some(function (it) { return it.tab === t; });
@@ -82,7 +80,7 @@
     }
 
     function selectTab(t) {
-      state.tab = t; state.shown = PAGE;
+      state.tab = t;
       tabsBox.querySelectorAll('.filter').forEach(function (x) { x.setAttribute('aria-pressed', String(x.getAttribute('data-tab') === t)); });
       render();
     }
@@ -133,16 +131,10 @@
       });
       grid.innerHTML = '';
       var frag = document.createDocumentFragment();
-      list.slice(0, state.shown).forEach(function (it, i) { frag.appendChild(tile(it, i, list)); });
+      // Show every work at once; images are lazy-loaded so scrolling stays light.
+      list.forEach(function (it, i) { frag.appendChild(tile(it, i, list)); });
       grid.appendChild(frag);
-      countEl.textContent = Math.min(state.shown, list.length) + ' / ' + list.length + ' projects';
-      moreWrap.innerHTML = '';
-      if (state.shown < list.length) {
-        var more = el('button', 'btn btn-ghost', '더보기 (' + Math.min(state.shown, list.length) + ' / ' + list.length + ')');
-        more.type = 'button';
-        more.addEventListener('click', function () { state.shown += PAGE; render(); });
-        moreWrap.appendChild(more);
-      }
+      countEl.textContent = list.length + ' projects';
     }
     render();
   });
