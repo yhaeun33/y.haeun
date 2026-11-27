@@ -1960,5 +1960,49 @@ window.WORKS = {
    "tab": "기타",
    "ratio": 1.0
   }
+ ],
+ "detail": [
+  {
+   "id": "detail-001",
+   "thumb": "images/detail/detail-001.jpg",
+   "full": "images/detail/full/detail-001.jpg",
+   "title": "리카타 핏메이드X 하이브리드 골프 스마트워치",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000101195"
+  },
+  {
+   "id": "detail-002",
+   "thumb": "images/detail/detail-002.jpg",
+   "full": "images/detail/full/detail-002.jpg",
+   "title": "리카타 서리낭 골프 얼음주머니 K-에디션",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000099097"
+  },
+  {
+   "id": "detail-003",
+   "thumb": "images/detail/detail-003.jpg",
+   "full": "images/detail/full/detail-003.jpg",
+   "title": "히메지몬자 NEW 2.0 아벤타도르 트리슐라 풀세트",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000092670"
+  },
+  {
+   "id": "detail-004",
+   "thumb": "images/detail/detail-004.jpg",
+   "full": "images/detail/full/detail-004.jpg",
+   "title": "해비타 듀얼랩 골프 이뮨 올인원 비타민",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000067748"
+  },
+  {
+   "id": "detail-005",
+   "thumb": "images/detail/detail-005.jpg",
+   "full": "images/detail/full/detail-005.jpg",
+   "title": "비액티브 무브맥스 MSM 관절 스포츠크림",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000079036"
+  },
+  {
+   "id": "detail-006",
+   "thumb": "images/detail/detail-006.jpg",
+   "full": "images/detail/full/detail-006.jpg",
+   "title": "미즈노 NEW RB 2.0 정글 버킷햇",
+   "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000086488"
+  }
  ]
 };
