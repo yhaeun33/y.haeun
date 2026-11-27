@@ -6,6 +6,7 @@
     ad: (RAW.promo || []).map(function (it) { return Object.assign({}, it, { tab: '기획전', kind: '기획전' }); })
       .concat((RAW.ad || []).map(function (it) { return Object.assign({}, it, { kind: '광고' }); })),
     detail: RAW.detail || [],
+    flow: RAW.flow || [],
     ai: RAW.ai || []
   };
   // Old deep links from index.html (work.html#promo) land on the 기획전 tab.
@@ -32,6 +33,7 @@
     var it = lbList[lbIndex];
     lbImg.src = it.full || it.thumb;
     lbImg.alt = it.alt;
+    lbImg.classList.toggle('wide', !!it.wide);   // workflow diagrams use the full screen width
     lb.scrollTop = 0;
   }
   function lbOpen(list, i) {
@@ -92,7 +94,7 @@
 
     function tile(it, i, list) {
       var isWeb = cat === 'web';
-      var isDetail = cat === 'detail';   // web-style card, but opens the full page in the lightbox
+      var isDetail = cat === 'detail' || cat === 'flow';   // web-style card, but opens the full image in the lightbox
       var t;
       if (isWeb && it.link) {
         t = el('a', 'tile');
@@ -116,9 +118,10 @@
       if (isDetail) {
         var dmeta = el('div', 'meta');
         dmeta.appendChild(el('b', null, it.title));
-        dmeta.appendChild(el('small', null, '상세페이지 전체 보기'));
+        if (it.desc) dmeta.appendChild(el('span', 'desc', it.desc));
+        dmeta.appendChild(el('small', null, cat === 'flow' ? '노드 ' + it.nodes + '개 · 구조도 크게 보기' : '상세페이지 전체 보기'));
         t.appendChild(dmeta);
-        t.setAttribute('aria-label', it.title + ' 상세페이지 크게 보기');
+        t.setAttribute('aria-label', it.title + (cat === 'flow' ? ' 워크플로우 구조도 크게 보기' : ' 상세페이지 크게 보기'));
       } else if (isWeb) {
         var meta = el('div', 'meta');
         meta.appendChild(el('b', null, it.title || '웹사이트 작업'));
@@ -151,7 +154,7 @@
 
     var tiles = [], cols = 0;
     function layout() {
-      if (cat === 'web' || cat === 'detail') {
+      if (cat === 'web' || cat === 'detail' || cat === 'flow') {
         grid.innerHTML = '';
         tiles.forEach(function (t) { grid.appendChild(t.node); });
         return;
