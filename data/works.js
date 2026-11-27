@@ -25,7 +25,7 @@ window.WORKS = {
   {
    "id": "web-002",
    "thumb": "images/web/web-002.jpg",
-   "title": "딜팡 GNB 카테고리 구좌 리뉴얼 PC/ M",
+   "title": "딜팡 GNB 카테고리 구좌 리뉴얼 PC / M",
    "link": "https://www.figma.com/proto/itfvL4wOPtKPnYwjkWzMUu/-dealpang--category_renwal-PC_M?page-id=0%3A1&node-id=1-3&p=f&viewport=538%2C445%2C0.17&t=mDSoeqA6ZT0TV6Qs-1&scaling=min-zoom&content-scaling=fixed",
    "tab": "UIUX 리뉴얼"
   },
@@ -136,7 +136,7 @@ window.WORKS = {
    "id": "web-017",
    "thumb": "images/web/web-017.jpg",
    "title": "대원외국어고등학교",
-   "link": "http://www.dwfl.hs.kr/",
+   "link": "https://www.dwfl.hs.kr/",
    "tab": "실서버 반영 시안"
   },
   {
@@ -174,7 +174,7 @@ window.WORKS = {
   {
    "id": "web-022",
    "thumb": "images/web/web-022.jpg",
-   "title": "한국시험인증 산업협회 [반응형]",
+   "title": "한국시험인증산업협회 [반응형]",
    "tab": "제안시안",
    "full": "images/web/full/web-022.jpg?v=2",
    "mock": "images/web/full/web-022-mock.jpg?v=1"
@@ -182,7 +182,7 @@ window.WORKS = {
   {
    "id": "web-023",
    "thumb": "images/web/web-023.jpg",
-   "title": "국립호남권 생물자원관 [반응형]",
+   "title": "국립호남권생물자원관 [반응형]",
    "tab": "제안시안",
    "full": "images/web/full/web-023.jpg?v=2",
    "mock": "images/web/full/web-023-mock.jpg?v=1"
@@ -190,7 +190,7 @@ window.WORKS = {
   {
    "id": "web-024",
    "thumb": "images/web/web-024.jpg",
-   "title": "데이터분쟁조정 위원회 [반응형]",
+   "title": "데이터분쟁조정위원회 [반응형]",
    "tab": "제안시안",
    "full": "images/web/full/web-024.jpg?v=2",
    "mock": "images/web/full/web-024-mock.jpg?v=1"
