@@ -923,6 +923,96 @@ window.WORKS = {
  ],
  "ai": [
   {
+   "id": "ai-049",
+   "thumb": "images/ai/ai-049.jpg",
+   "full": "images/ai/full/ai-049.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-050",
+   "thumb": "images/ai/ai-050.jpg",
+   "full": "images/ai/full/ai-050.jpg",
+   "ratio": 1.266
+  },
+  {
+   "id": "ai-051",
+   "thumb": "images/ai/ai-051.jpg",
+   "full": "images/ai/full/ai-051.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-052",
+   "thumb": "images/ai/ai-052.jpg",
+   "full": "images/ai/full/ai-052.jpg",
+   "ratio": 1.334
+  },
+  {
+   "id": "ai-053",
+   "thumb": "images/ai/ai-053.jpg",
+   "full": "images/ai/full/ai-053.jpg",
+   "ratio": 1.18
+  },
+  {
+   "id": "ai-054",
+   "thumb": "images/ai/ai-054.jpg",
+   "full": "images/ai/full/ai-054.jpg",
+   "ratio": 1.186
+  },
+  {
+   "id": "ai-055",
+   "thumb": "images/ai/ai-055.jpg",
+   "full": "images/ai/full/ai-055.jpg",
+   "ratio": 0.666
+  },
+  {
+   "id": "ai-056",
+   "thumb": "images/ai/ai-056.jpg",
+   "full": "images/ai/full/ai-056.jpg",
+   "ratio": 0.562
+  },
+  {
+   "id": "ai-057",
+   "thumb": "images/ai/ai-057.jpg",
+   "full": "images/ai/full/ai-057.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-058",
+   "thumb": "images/ai/ai-058.jpg",
+   "full": "images/ai/full/ai-058.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-059",
+   "thumb": "images/ai/ai-059.jpg",
+   "full": "images/ai/full/ai-059.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-060",
+   "thumb": "images/ai/ai-060.jpg",
+   "full": "images/ai/full/ai-060.jpg",
+   "ratio": 1.776
+  },
+  {
+   "id": "ai-061",
+   "thumb": "images/ai/ai-061.jpg",
+   "full": "images/ai/full/ai-061.jpg",
+   "ratio": 0.75
+  },
+  {
+   "id": "ai-062",
+   "thumb": "images/ai/ai-062.jpg",
+   "full": "images/ai/full/ai-062.jpg",
+   "ratio": 1.604
+  },
+  {
+   "id": "ai-063",
+   "thumb": "images/ai/ai-063.jpg",
+   "full": "images/ai/full/ai-063.jpg",
+   "ratio": 1.5
+  },
+  {
    "id": "ai-001",
    "thumb": "images/ai/ai-001.jpg",
    "full": "images/ai/full/ai-001.jpg",
