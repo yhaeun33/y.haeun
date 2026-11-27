@@ -183,7 +183,11 @@
   <div class="cta">
     <h2>함께 만들어볼까요?</h2>
     <p>AI를 잘 쓰는 디자이너가 필요하다면 편하게 연락 주세요.</p>
-    <a class="btn" href="mailto:y.haeun33@gmail.com">y.haeun33@gmail.com</a>
+    <button class="btn copy-mail" type="button" data-copy="y.haeun33@gmail.com" aria-describedby="copy-msg">
+      y.haeun33@gmail.com
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+    </button>
+    <p class="copy-msg" id="copy-msg" role="status" aria-live="polite"></p>
   </div>
 </section>
 </main>
@@ -191,5 +195,6 @@
 <footer class="footer">© 2026 Haeun · Adriot. All rights reserved.</footer>
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/typing.js"></script>
+<script src="assets/js/copy.js"></script>
 </body>
 </html>

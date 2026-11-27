@@ -196,3 +196,8 @@ a:hover{opacity:.88}
 /* Titles: heavier weight so headings read clearly (Noto Sans KR 800 is loaded) */
 h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weight:800}
 .role,.skill .row,.tile .meta b,.story summary{font-weight:700}
+
+/* Contact: copy-to-clipboard email button */
+.copy-mail{gap:8px}
+.copy-msg{min-height:1.6em;margin:14px 0 0!important;font-size:15px;font-weight:600;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s}
+.copy-msg.show{opacity:1;transform:none}
