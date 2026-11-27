@@ -85,7 +85,11 @@ a:hover{opacity:.88}
 .story p{color:var(--muted);margin:12px 0 0}
 
 /* ---------- Project cards (index) ---------- */
-.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+/* Project cards: equal widths, 3 per row; a shorter last row is centered */
+.grid-3{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
+.grid-3 > .project{flex:0 1 calc((100% - 48px) / 3);min-width:0}
+@media (max-width:1100px){.grid-3 > .project{flex-basis:calc((100% - 24px) / 2)}}
+@media (max-width:700px){.grid-3 > .project{flex-basis:100%}}
 .project{overflow:hidden;display:flex;flex-direction:column}
 .project .thumb{aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--primary),var(--indigo))}
 .project .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
