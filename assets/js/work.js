@@ -130,7 +130,10 @@
           host = it.link_android ? '앱스토어 · 구글플레이 ↗'
             : /figma\.com\/design/.test(it.link) ? 'Figma 디자인 보기 ↗'
             : /figma\.com/.test(it.link) ? 'Figma 프로토타입 열기 ↗'
-            : /creatorlink\.net/.test(it.link) ? '상세 시안 보기 ↗' : '라이브 사이트 ↗';
+            : '라이브 사이트 ↗';
+        } else if (it.full) {
+          host = '시안 크게 보기';   // full design opens in the lightbox, no outside link
+          t.setAttribute('aria-label', (it.title || '웹사이트 작업') + ' 시안 크게 보기');
         }
         if (host) meta.appendChild(el('small', null, host));
         t.appendChild(meta);
