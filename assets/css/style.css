@@ -273,7 +273,7 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 @media (max-width:640px){.ring:last-child{grid-column:span 2}}
 
 /* Selected Projects: five compact cards in one row (horizontal scroll on narrow screens) */
-.proj-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.proj-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .pcard{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
 .pcard:hover{opacity:1;transform:translateY(-4px);box-shadow:0 16px 32px -20px rgba(18,20,43,.4)}
 .pcard .thumb{aspect-ratio:4/3;overflow:hidden;background:var(--line)}
@@ -285,8 +285,7 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 .pmeta .works{margin-left:0}
 .pmeta .go{font-weight:800;color:var(--primary);transition:transform .2s}
 .pcard:hover .go{transform:translateX(4px)}
-/* 6 cards: one row on wide screens, 3 x 2 on laptops/tablets, swipe row on phones */
-@media (max-width:1200px){.proj-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+/* 6 cards: 3 x 2 grid; swipe row on phones */
 @media (max-width:640px){
   .proj-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
   .pcard{flex:0 0 240px;scroll-snap-align:start}
@@ -297,3 +296,5 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 #flow .tile .ph{background:#202124}
 .tile .meta .desc{display:block;font-size:13px;line-height:1.55;color:var(--muted);margin-top:4px}
 .lightbox img.wide{max-width:min(2400px,100%)}
+
+.pbody h3{font-size:18px}
