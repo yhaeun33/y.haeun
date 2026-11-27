@@ -923,28 +923,28 @@ window.WORKS = {
  ],
  "ai": [
   {
+   "id": "ai-058",
+   "thumb": "images/ai/ai-058.jpg",
+   "full": "images/ai/full/ai-058.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-059",
+   "thumb": "images/ai/ai-059.jpg",
+   "full": "images/ai/full/ai-059.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-057",
+   "thumb": "images/ai/ai-057.jpg",
+   "full": "images/ai/full/ai-057.jpg",
+   "ratio": 1.5
+  },
+  {
    "id": "ai-049",
    "thumb": "images/ai/ai-049.jpg",
    "full": "images/ai/full/ai-049.jpg",
    "ratio": 1.0
-  },
-  {
-   "id": "ai-050",
-   "thumb": "images/ai/ai-050.jpg",
-   "full": "images/ai/full/ai-050.jpg",
-   "ratio": 1.266
-  },
-  {
-   "id": "ai-051",
-   "thumb": "images/ai/ai-051.jpg",
-   "full": "images/ai/full/ai-051.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-052",
-   "thumb": "images/ai/ai-052.jpg",
-   "full": "images/ai/full/ai-052.jpg",
-   "ratio": 1.334
   },
   {
    "id": "ai-053",
@@ -959,6 +959,30 @@ window.WORKS = {
    "ratio": 1.186
   },
   {
+   "id": "ai-062",
+   "thumb": "images/ai/ai-062.jpg",
+   "full": "images/ai/full/ai-062.jpg",
+   "ratio": 1.604
+  },
+  {
+   "id": "ai-001",
+   "thumb": "images/ai/ai-001.jpg",
+   "full": "images/ai/full/ai-001.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-063",
+   "thumb": "images/ai/ai-063.jpg",
+   "full": "images/ai/full/ai-063.jpg",
+   "ratio": 1.5
+  },
+  {
+   "id": "ai-050",
+   "thumb": "images/ai/ai-050.jpg",
+   "full": "images/ai/full/ai-050.jpg",
+   "ratio": 1.266
+  },
+  {
    "id": "ai-055",
    "thumb": "images/ai/ai-055.jpg",
    "full": "images/ai/full/ai-055.jpg",
@@ -971,63 +995,9 @@ window.WORKS = {
    "ratio": 0.562
   },
   {
-   "id": "ai-057",
-   "thumb": "images/ai/ai-057.jpg",
-   "full": "images/ai/full/ai-057.jpg",
-   "ratio": 1.5
-  },
-  {
-   "id": "ai-058",
-   "thumb": "images/ai/ai-058.jpg",
-   "full": "images/ai/full/ai-058.jpg",
-   "ratio": 1.5
-  },
-  {
-   "id": "ai-059",
-   "thumb": "images/ai/ai-059.jpg",
-   "full": "images/ai/full/ai-059.jpg",
-   "ratio": 1.5
-  },
-  {
-   "id": "ai-060",
-   "thumb": "images/ai/ai-060.jpg",
-   "full": "images/ai/full/ai-060.jpg",
-   "ratio": 1.776
-  },
-  {
-   "id": "ai-061",
-   "thumb": "images/ai/ai-061.jpg",
-   "full": "images/ai/full/ai-061.jpg",
-   "ratio": 0.75
-  },
-  {
-   "id": "ai-062",
-   "thumb": "images/ai/ai-062.jpg",
-   "full": "images/ai/full/ai-062.jpg",
-   "ratio": 1.604
-  },
-  {
-   "id": "ai-063",
-   "thumb": "images/ai/ai-063.jpg",
-   "full": "images/ai/full/ai-063.jpg",
-   "ratio": 1.5
-  },
-  {
-   "id": "ai-001",
-   "thumb": "images/ai/ai-001.jpg",
-   "full": "images/ai/full/ai-001.jpg",
-   "ratio": 1.0
-  },
-  {
    "id": "ai-002",
    "thumb": "images/ai/ai-002.jpg",
    "full": "images/ai/full/ai-002.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-003",
-   "thumb": "images/ai/ai-003.jpg",
-   "full": "images/ai/full/ai-003.jpg",
    "ratio": 1.0
   },
   {
@@ -1049,15 +1019,87 @@ window.WORKS = {
    "ratio": 1.0
   },
   {
-   "id": "ai-007",
-   "thumb": "images/ai/ai-007.jpg",
-   "full": "images/ai/full/ai-007.jpg",
-   "ratio": 1.0
-  },
-  {
    "id": "ai-008",
    "thumb": "images/ai/ai-008.jpg",
    "full": "images/ai/full/ai-008.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-014",
+   "thumb": "images/ai/ai-014.jpg",
+   "full": "images/ai/full/ai-014.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-016",
+   "thumb": "images/ai/ai-016.jpg",
+   "full": "images/ai/full/ai-016.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-024",
+   "thumb": "images/ai/ai-024.jpg",
+   "full": "images/ai/full/ai-024.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-026",
+   "thumb": "images/ai/ai-026.jpg",
+   "full": "images/ai/full/ai-026.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-031",
+   "thumb": "images/ai/ai-031.jpg",
+   "full": "images/ai/full/ai-031.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-032",
+   "thumb": "images/ai/ai-032.jpg",
+   "full": "images/ai/full/ai-032.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-048",
+   "thumb": "images/ai/ai-048.jpg",
+   "full": "images/ai/full/ai-048.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-051",
+   "thumb": "images/ai/ai-051.jpg",
+   "full": "images/ai/full/ai-051.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-052",
+   "thumb": "images/ai/ai-052.jpg",
+   "full": "images/ai/full/ai-052.jpg",
+   "ratio": 1.334
+  },
+  {
+   "id": "ai-060",
+   "thumb": "images/ai/ai-060.jpg",
+   "full": "images/ai/full/ai-060.jpg",
+   "ratio": 1.776
+  },
+  {
+   "id": "ai-061",
+   "thumb": "images/ai/ai-061.jpg",
+   "full": "images/ai/full/ai-061.jpg",
+   "ratio": 0.75
+  },
+  {
+   "id": "ai-003",
+   "thumb": "images/ai/ai-003.jpg",
+   "full": "images/ai/full/ai-003.jpg",
+   "ratio": 1.0
+  },
+  {
+   "id": "ai-007",
+   "thumb": "images/ai/ai-007.jpg",
+   "full": "images/ai/full/ai-007.jpg",
    "ratio": 1.0
   },
   {
@@ -1091,21 +1133,9 @@ window.WORKS = {
    "ratio": 1.0
   },
   {
-   "id": "ai-014",
-   "thumb": "images/ai/ai-014.jpg",
-   "full": "images/ai/full/ai-014.jpg",
-   "ratio": 1.0
-  },
-  {
    "id": "ai-015",
    "thumb": "images/ai/ai-015.jpg",
    "full": "images/ai/full/ai-015.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-016",
-   "thumb": "images/ai/ai-016.jpg",
-   "full": "images/ai/full/ai-016.jpg",
    "ratio": 1.0
   },
   {
@@ -1151,21 +1181,9 @@ window.WORKS = {
    "ratio": 1.0
   },
   {
-   "id": "ai-024",
-   "thumb": "images/ai/ai-024.jpg",
-   "full": "images/ai/full/ai-024.jpg",
-   "ratio": 1.0
-  },
-  {
    "id": "ai-025",
    "thumb": "images/ai/ai-025.jpg",
    "full": "images/ai/full/ai-025.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-026",
-   "thumb": "images/ai/ai-026.jpg",
-   "full": "images/ai/full/ai-026.jpg",
    "ratio": 1.0
   },
   {
@@ -1190,18 +1208,6 @@ window.WORKS = {
    "id": "ai-030",
    "thumb": "images/ai/ai-030.jpg",
    "full": "images/ai/full/ai-030.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-031",
-   "thumb": "images/ai/ai-031.jpg",
-   "full": "images/ai/full/ai-031.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-032",
-   "thumb": "images/ai/ai-032.jpg",
-   "full": "images/ai/full/ai-032.jpg",
    "ratio": 1.0
   },
   {
@@ -1292,12 +1298,6 @@ window.WORKS = {
    "id": "ai-047",
    "thumb": "images/ai/ai-047.jpg",
    "full": "images/ai/full/ai-047.jpg",
-   "ratio": 1.0
-  },
-  {
-   "id": "ai-048",
-   "thumb": "images/ai/ai-048.jpg",
-   "full": "images/ai/full/ai-048.jpg",
    "ratio": 1.0
   }
  ],
