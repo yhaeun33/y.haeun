@@ -359,3 +359,7 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
   .nav-links .dd-menu .dd-all{border-top:0}
 }
 .section{scroll-margin-top:68px}
+
+/* Lightbox: design and its responsive mockup stacked with a visible gap */
+.lightbox{flex-direction:column;align-items:center;gap:48px}
+.lightbox img.mock{max-width:min(960px,100%)}
