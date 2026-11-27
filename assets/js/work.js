@@ -198,11 +198,13 @@
   filters.forEach(function (b) {
     b.addEventListener('click', function () { applyFilter(b.getAttribute('data-filter')); });
   });
-  // Deep link from index (work.html#ad, #promo): show that section only
-  var hash = location.hash.replace('#', '');
-  var alias = HASH_ALIAS[hash];
-  var cat = alias ? alias.cat : hash;
-  if (DATA[cat]) {
+  // Deep link (work.html#ad, #promo, GNB dropdown): show that section only.
+  // Runs on load and again when the hash changes on this page.
+  function openFromHash() {
+    var hash = location.hash.replace('#', '');
+    var alias = HASH_ALIAS[hash];
+    var cat = alias ? alias.cat : hash;
+    if (!DATA[cat]) return;
     applyFilter(cat);
     var target = document.getElementById(cat);
     if (target) {
@@ -210,4 +212,6 @@
       setTimeout(function () { target.scrollIntoView(); }, 0);
     }
   }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
 })();
