@@ -308,3 +308,12 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 .ti{flex:none;width:36px;height:36px;object-fit:contain;border-radius:8px}
 .ti svg{width:22px;height:22px}
 .ti .mono{font-family:var(--display);font-size:16px;font-weight:700;letter-spacing:-.02em}
+
+/* Top filters: clearer dividers and readable inactive items */
+.filters{gap:8px 0}
+.filters .filter{opacity:.75;color:#6B7088}
+.filters .filter:hover{opacity:1;color:var(--ink)}
+.filters .filter[aria-pressed="true"]{opacity:1;color:var(--ink)}
+.filters .sep{font-size:0;width:2px;height:28px;margin:0 22px;align-self:center;background:rgba(18,20,43,.28);border-radius:2px}
+@media (max-width:860px){.filters .sep{height:20px;margin:0 12px}}
+@media (max-width:640px){.filters{gap:4px 18px}.filters .sep{display:none}}
