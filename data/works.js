@@ -97,35 +97,40 @@ window.WORKS = {
    "thumb": "images/web/web-012.jpg",
    "title": "국민통합위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-012.jpg?v=2"
+   "full": "images/web/full/web-012.jpg?v=2",
+   "mock": "images/web/full/web-012-mock.jpg?v=1"
   },
   {
    "id": "web-013",
    "thumb": "images/web/web-013.jpg",
    "title": "규제혁신추진단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-013.jpg?v=2"
+   "full": "images/web/full/web-013.jpg?v=2",
+   "mock": "images/web/full/web-013-mock.jpg?v=1"
   },
   {
    "id": "web-014",
    "thumb": "images/web/web-014.jpg",
    "title": "탄소중립 녹색성장위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-014.jpg?v=2"
+   "full": "images/web/full/web-014.jpg?v=2",
+   "mock": "images/web/full/web-014-mock.jpg?v=1"
   },
   {
    "id": "web-015",
    "thumb": "images/web/web-015.jpg",
    "title": "국립여성사전시관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-015.jpg?v=2"
+   "full": "images/web/full/web-015.jpg?v=2",
+   "mock": "images/web/full/web-015-mock.jpg?v=1"
   },
   {
    "id": "web-016",
    "thumb": "images/web/web-016.jpg",
    "title": "규제과학지원단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-016.jpg?v=2"
+   "full": "images/web/full/web-016.jpg?v=2",
+   "mock": "images/web/full/web-016-mock.jpg?v=1"
   },
   {
    "id": "web-017",
@@ -139,98 +144,112 @@ window.WORKS = {
    "thumb": "images/web/web-018.jpg",
    "title": "대테러센터 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-018.jpg?v=2"
+   "full": "images/web/full/web-018.jpg?v=2",
+   "mock": "images/web/full/web-018-mock.jpg?v=1"
   },
   {
    "id": "web-019",
    "thumb": "images/web/web-019.jpg",
    "title": "인천연구원 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-019.jpg?v=2"
+   "full": "images/web/full/web-019.jpg?v=2",
+   "mock": "images/web/full/web-019-mock.jpg?v=1"
   },
   {
    "id": "web-020",
    "thumb": "images/web/web-020.jpg",
    "title": "수원시박물관사업소 통합예약시스템 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-020.jpg?v=2"
+   "full": "images/web/full/web-020.jpg?v=2",
+   "mock": "images/web/full/web-020-mock.jpg?v=1"
   },
   {
    "id": "web-021",
    "thumb": "images/web/web-021.jpg",
    "title": "시흥시청소년재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-021.jpg?v=2"
+   "full": "images/web/full/web-021.jpg?v=2",
+   "mock": "images/web/full/web-021-mock.jpg?v=1"
   },
   {
    "id": "web-022",
    "thumb": "images/web/web-022.jpg",
    "title": "한국시험인증 산업협회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-022.jpg?v=2"
+   "full": "images/web/full/web-022.jpg?v=2",
+   "mock": "images/web/full/web-022-mock.jpg?v=1"
   },
   {
    "id": "web-023",
    "thumb": "images/web/web-023.jpg",
    "title": "국립호남권 생물자원관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-023.jpg?v=2"
+   "full": "images/web/full/web-023.jpg?v=2",
+   "mock": "images/web/full/web-023-mock.jpg?v=1"
   },
   {
    "id": "web-024",
    "thumb": "images/web/web-024.jpg",
    "title": "데이터분쟁조정 위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-024.jpg?v=2"
+   "full": "images/web/full/web-024.jpg?v=2",
+   "mock": "images/web/full/web-024-mock.jpg?v=1"
   },
   {
    "id": "web-025",
    "thumb": "images/web/web-025.jpg",
    "title": "시청자미디어재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-025.jpg?v=2"
+   "full": "images/web/full/web-025.jpg?v=2",
+   "mock": "images/web/full/web-025-mock.jpg?v=1"
   },
   {
    "id": "web-026",
    "thumb": "images/web/web-026.jpg",
    "title": "문화도시부천 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-026.jpg?v=2"
+   "full": "images/web/full/web-026.jpg?v=2",
+   "mock": "images/web/full/web-026-mock.jpg?v=1"
   },
   {
    "id": "web-027",
    "thumb": "images/web/web-027.jpg",
    "title": "경기도 사회적경제원 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-027.jpg?v=2"
+   "full": "images/web/full/web-027.jpg?v=2",
+   "mock": "images/web/full/web-027-mock.jpg?v=1"
   },
   {
    "id": "web-028",
    "thumb": "images/web/web-028.jpg",
    "title": "어르신 문화활동지원 플랫폼 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-028.jpg?v=2"
+   "full": "images/web/full/web-028.jpg?v=2",
+   "mock": "images/web/full/web-028-mock.jpg?v=1"
   },
   {
    "id": "web-029",
    "thumb": "images/web/web-029.jpg",
    "title": "김포문화재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-029.jpg?v=2"
+   "full": "images/web/full/web-029.jpg?v=2",
+   "mock": "images/web/full/web-029-mock.jpg?v=1"
   },
   {
    "id": "web-030",
    "thumb": "images/web/web-030.jpg",
    "title": "대통령경호처 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-030.jpg?v=2"
+   "full": "images/web/full/web-030.jpg?v=2",
+   "mock": "images/web/full/web-030-mock.jpg?v=1"
   },
   {
    "id": "web-031",
    "thumb": "images/web/web-031.jpg",
    "title": "경기국악원 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-031.jpg?v=2"
+   "full": "images/web/full/web-031.jpg?v=2",
+   "mock": "images/web/full/web-031-mock.jpg?v=1"
   },
   {
    "id": "web-032",
@@ -342,126 +361,144 @@ window.WORKS = {
    "thumb": "images/web/web-047.jpg",
    "title": "이지비즈 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-047.jpg?v=2"
+   "full": "images/web/full/web-047.jpg?v=2",
+   "mock": "images/web/full/web-047-mock.jpg?v=1"
   },
   {
    "id": "web-048",
    "thumb": "images/web/web-048.jpg",
    "title": "수원시열린시장실 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-048.jpg?v=2"
+   "full": "images/web/full/web-048.jpg?v=2",
+   "mock": "images/web/full/web-048-mock.jpg?v=1"
   },
   {
    "id": "web-049",
    "thumb": "images/web/web-049.jpg",
    "title": "경기도국민안전체험관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-049.jpg?v=2"
+   "full": "images/web/full/web-049.jpg?v=2",
+   "mock": "images/web/full/web-049-mock.jpg?v=1"
   },
   {
    "id": "web-050",
    "thumb": "images/web/web-050.jpg",
    "title": "국립여성사전시관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-050.jpg?v=2"
+   "full": "images/web/full/web-050.jpg?v=2",
+   "mock": "images/web/full/web-050-mock.jpg?v=1"
   },
   {
    "id": "web-051",
    "thumb": "images/web/web-051.jpg",
    "title": "탄소중립생활실천홍보홈페이지 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-051.jpg?v=2"
+   "full": "images/web/full/web-051.jpg?v=2",
+   "mock": "images/web/full/web-051-mock.jpg?v=1"
   },
   {
    "id": "web-052",
    "thumb": "images/web/web-052.jpg",
    "title": "공주문예회관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-052.jpg?v=2"
+   "full": "images/web/full/web-052.jpg?v=2",
+   "mock": "images/web/full/web-052-mock.jpg?v=1"
   },
   {
    "id": "web-053",
    "thumb": "images/web/web-053.jpg",
    "title": "국가테러대책위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-053.jpg?v=2"
+   "full": "images/web/full/web-053.jpg?v=2",
+   "mock": "images/web/full/web-053-mock.jpg?v=1"
   },
   {
    "id": "web-054",
    "thumb": "images/web/web-054.jpg",
    "title": "한국이스라엘산업연구개발재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-054.jpg?v=2"
+   "full": "images/web/full/web-054.jpg?v=2",
+   "mock": "images/web/full/web-054-mock.jpg?v=1"
   },
   {
    "id": "web-055",
    "thumb": "images/web/web-055.jpg",
    "title": "국가인권위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-055.jpg?v=2"
+   "full": "images/web/full/web-055.jpg?v=2",
+   "mock": "images/web/full/web-055-mock.jpg?v=1"
   },
   {
    "id": "web-056",
    "thumb": "images/web/web-056.jpg",
    "title": "한국특허전략개발원 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-056.jpg?v=2"
+   "full": "images/web/full/web-056.jpg?v=2",
+   "mock": "images/web/full/web-056-mock.jpg?v=1"
   },
   {
    "id": "web-057",
    "thumb": "images/web/web-057.jpg",
    "title": "부안군문화재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-057.jpg?v=2"
+   "full": "images/web/full/web-057.jpg?v=2",
+   "mock": "images/web/full/web-057-mock.jpg?v=1"
   },
   {
    "id": "web-058",
    "thumb": "images/web/web-058.jpg",
    "title": "실종아동전문기관 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-058.jpg?v=2"
+   "full": "images/web/full/web-058.jpg?v=2",
+   "mock": "images/web/full/web-058-mock.jpg?v=1"
   },
   {
    "id": "web-059",
    "thumb": "images/web/web-059.jpg",
    "title": "아시아해양사고조사기관회의 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-059.jpg?v=2"
+   "full": "images/web/full/web-059.jpg?v=2",
+   "mock": "images/web/full/web-059-mock.jpg?v=1"
   },
   {
    "id": "web-060",
    "thumb": "images/web/web-060.jpg",
    "title": "안산문화재단 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-060.jpg?v=2"
+   "full": "images/web/full/web-060.jpg?v=2",
+   "mock": "images/web/full/web-060-mock.jpg?v=1"
   },
   {
    "id": "web-061",
    "thumb": "images/web/web-061.jpg",
    "title": "착한가격업소 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-061.jpg?v=2"
+   "full": "images/web/full/web-061.jpg?v=2",
+   "mock": "images/web/full/web-061-mock.jpg?v=1"
   },
   {
    "id": "web-062",
    "thumb": "images/web/web-062.jpg",
    "title": "G-FAIR KOREA [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-062.jpg?v=2"
+   "full": "images/web/full/web-062.jpg?v=2",
+   "mock": "images/web/full/web-062-mock.jpg?v=1"
   },
   {
    "id": "web-063",
    "thumb": "images/web/web-063.jpg",
    "title": "탄소중립위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-063.jpg?v=2"
+   "full": "images/web/full/web-063.jpg?v=2",
+   "mock": "images/web/full/web-063-mock.jpg?v=1"
   },
   {
    "id": "web-064",
    "thumb": "images/web/web-064.jpg",
    "title": "국가물관리위원회 [반응형]",
    "tab": "제안시안",
-   "full": "images/web/full/web-064.jpg?v=2"
+   "full": "images/web/full/web-064.jpg?v=2",
+   "mock": "images/web/full/web-064-mock.jpg?v=1"
   },
   {
    "id": "web-065",

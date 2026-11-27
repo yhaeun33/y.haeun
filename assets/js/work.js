@@ -27,6 +27,10 @@
   // ---------- Lightbox ----------
   var lb = document.getElementById('lightbox');
   var lbImg = lb.querySelector('img');
+  // Optional second image (responsive mockup) shown below the design, separated by a gap.
+  var lbMock = document.createElement('img');
+  lbMock.className = 'mock'; lbMock.hidden = true;
+  lbImg.insertAdjacentElement('afterend', lbMock);
   var lbList = [], lbIndex = 0, lastFocus = null;
   function lbShow(i) {
     lbIndex = (i + lbList.length) % lbList.length;
@@ -34,6 +38,8 @@
     lbImg.src = it.full || it.thumb;
     lbImg.alt = it.alt;
     lbImg.classList.toggle('wide', !!it.wide);   // workflow diagrams use the full screen width
+    if (it.mock) { lbMock.src = it.mock; lbMock.alt = it.alt + ' 반응형 목업'; lbMock.hidden = false; }
+    else { lbMock.removeAttribute('src'); lbMock.hidden = true; }
     lb.scrollTop = 0;
   }
   function lbOpen(list, i) {
@@ -42,7 +48,7 @@
     lbShow(i); lb.querySelector('.lb-close').focus();
   }
   function lbClose() {
-    lb.removeAttribute('open'); document.body.style.overflow = ''; lbImg.removeAttribute('src');
+    lb.removeAttribute('open'); document.body.style.overflow = ''; lbImg.removeAttribute('src'); lbMock.removeAttribute('src');
     if (lastFocus) lastFocus.focus();
   }
   lb.querySelector('.lb-close').addEventListener('click', lbClose);
