@@ -289,3 +289,9 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
   .proj-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
   .pcard{flex:0 0 240px;scroll-snap-align:start}
 }
+
+/* AI workflow cards and full-width diagram in the lightbox */
+#flow .gallery{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+#flow .tile .ph{background:#202124}
+.tile .meta .desc{display:block;font-size:13px;line-height:1.55;color:var(--muted);margin-top:4px}
+.lightbox img.wide{max-width:min(2400px,100%)}

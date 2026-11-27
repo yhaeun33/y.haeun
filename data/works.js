@@ -2004,5 +2004,34 @@ window.WORKS = {
    "title": "미즈노 NEW RB 2.0 정글 버킷햇",
    "link": "https://www.dealpang.com/goods/goods_view.php?goodsNo=1000086488"
   }
+ ],
+ "flow": [
+  {
+   "id": "flow-001",
+   "thumb": "images/flow/flow-001.jpg",
+   "full": "images/flow/full/flow-001.jpg",
+   "title": "모델 착용컷 6컷 자동 생성",
+   "desc": "상품 사진과 모델 사진을 넣으면 착장 색상만 바꿔 정면 착용컷 6장을 한 번에 만드는 워크플로우",
+   "nodes": 28,
+   "wide": true
+  },
+  {
+   "id": "flow-002",
+   "thumb": "images/flow/flow-002.jpg",
+   "full": "images/flow/full/flow-002.jpg",
+   "title": "착용컷 · 화보컷 9컷 생성",
+   "desc": "배경 무드와 착장 색상을 고정해 스튜디오 착용컷 6장과 야외 화보컷 3장을 이어서 만드는 워크플로우",
+   "nodes": 43,
+   "wide": true
+  },
+  {
+   "id": "flow-003",
+   "thumb": "images/flow/flow-003.jpg",
+   "full": "images/flow/full/flow-003.jpg",
+   "title": "상품 디테일컷 · 연출컷 9컷 생성",
+   "desc": "로고·자수 확대, 정면 클로즈업, 측면 3/4 디테일, 연출 전신컷과 화보컷까지 상세페이지용 컷을 만드는 워크플로우",
+   "nodes": 45,
+   "wide": true
+  }
  ]
 };
