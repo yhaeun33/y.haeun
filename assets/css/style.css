@@ -363,3 +363,6 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 /* Lightbox: design and its responsive mockup stacked with a visible gap */
 .lightbox{flex-direction:column;align-items:center;gap:48px}
 .lightbox img.mock{max-width:min(960px,100%)}
+/* Lightbox column: start at the top so the whole design scrolls, never squeeze images */
+.lightbox{justify-content:flex-start}
+.lightbox > img{flex:none}
