@@ -201,3 +201,13 @@ h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weigh
 .copy-mail{gap:8px}
 .copy-msg{min-height:1.6em;margin:14px 0 0!important;font-size:15px;font-weight:600;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s}
 .copy-msg.show{opacity:1;transform:none}
+
+/* Story: short titled sections, comfortable line length */
+.story-body{display:grid;gap:28px;margin-top:20px;padding-top:24px;border-top:1px solid var(--line)}
+.story-body section{max-width:760px}
+.story-body h4{margin:0 0 8px;font-size:17px;font-weight:800;color:var(--ink)}
+.story-body p{margin:0 0 10px;line-height:1.85;word-break:keep-all}
+.story-body ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.story-body li{color:var(--muted);line-height:1.8;padding-left:14px;border-left:3px solid var(--chip);word-break:keep-all}
+.story-body li b{display:block;color:var(--primary);font-weight:700;font-size:15px}
+@media (max-width:640px){.story-body p br{display:none}}
