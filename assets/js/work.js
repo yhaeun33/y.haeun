@@ -104,7 +104,11 @@
       } else {
         t = el('button', 'tile');
         t.type = 'button';
-        t.addEventListener('click', function () { lbOpen(list, i); });
+        t.addEventListener('click', function () {
+          // In the web list, only step through items that open here (skip outside links).
+          var seq = isWeb ? list.filter(function (x) { return !x.link && x.full; }) : list;
+          lbOpen(seq, Math.max(0, seq.indexOf(it)));
+        });
       }
       var ph = el('div', 'ph');
       // Non-web works keep their own proportions (masonry); very long pages are capped.
