@@ -100,7 +100,10 @@ a:hover{opacity:.88}
 .project .actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
 
 /* ---------- Skills ---------- */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.skills{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.skills > .skill{flex:0 1 calc((100% - 32px) / 3);min-width:0}
+@media (max-width:1000px){.skills > .skill{flex-basis:calc((100% - 16px) / 2)}}
+@media (max-width:640px){.skills > .skill{flex-basis:100%}}
 .skill{padding:20px}
 .skill .row{display:flex;justify-content:space-between;font-weight:600;margin-bottom:10px}
 .skill .row span:last-child{color:var(--muted)}
@@ -189,3 +192,7 @@ a:hover{opacity:.88}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .work-hero p,.work-head p{word-break:keep-all}
 #detail .gallery{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+
+/* Titles: heavier weight so headings read clearly (Noto Sans KR 800 is loaded) */
+h1,h2,h3,.h2,.hero h1,.work-hero h1,.work-head h2,.cta h2,.project h3{font-weight:800}
+.role,.skill .row,.tile .meta b,.story summary{font-weight:700}
