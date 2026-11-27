@@ -183,3 +183,4 @@ a:hover{opacity:.88}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .work-hero p,.work-head p{word-break:keep-all}
+#detail .gallery{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}

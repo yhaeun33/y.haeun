@@ -5,6 +5,7 @@
     web: RAW.web || [],
     ad: (RAW.promo || []).map(function (it) { return Object.assign({}, it, { tab: '기획전', kind: '기획전' }); })
       .concat((RAW.ad || []).map(function (it) { return Object.assign({}, it, { kind: '광고' }); })),
+    detail: RAW.detail || [],
     ai: RAW.ai || []
   };
   // Old deep links from index.html (work.html#promo) land on the 기획전 tab.
@@ -91,6 +92,7 @@
 
     function tile(it, i, list) {
       var isWeb = cat === 'web';
+      var isDetail = cat === 'detail';   // web-style card, but opens the full page in the lightbox
       var t;
       if (isWeb && it.link) {
         t = el('a', 'tile');
@@ -104,14 +106,20 @@
       }
       var ph = el('div', 'ph');
       // Non-web works keep their own proportions (masonry); very long pages are capped.
-      if (!isWeb && it.ratio) ph.style.aspectRatio = '1 / ' + Math.min(it.ratio, MAX_RATIO);
+      if (!isWeb && !isDetail && it.ratio) ph.style.aspectRatio = '1 / ' + Math.min(it.ratio, MAX_RATIO);
       var img = el('img');
       img.src = it.thumb; img.loading = 'lazy'; img.decoding = 'async';
       img.alt = it.alt;
       ph.appendChild(img);
       if (it.tab) ph.appendChild(el('span', 'tag', it.tab));
       t.appendChild(ph);
-      if (isWeb) {
+      if (isDetail) {
+        var dmeta = el('div', 'meta');
+        dmeta.appendChild(el('b', null, it.title));
+        dmeta.appendChild(el('small', null, '상세페이지 전체 보기'));
+        t.appendChild(dmeta);
+        t.setAttribute('aria-label', it.title + ' 상세페이지 크게 보기');
+      } else if (isWeb) {
         var meta = el('div', 'meta');
         meta.appendChild(el('b', null, it.title || '웹사이트 작업'));
         var host = '';
@@ -143,7 +151,7 @@
 
     var tiles = [], cols = 0;
     function layout() {
-      if (cat === 'web') {
+      if (cat === 'web' || cat === 'detail') {
         grid.innerHTML = '';
         tiles.forEach(function (t) { grid.appendChild(t.node); });
         return;

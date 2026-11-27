@@ -3,7 +3,7 @@
 윤하은(Adriot) 디자이너 포트폴리오 사이트예요. GitHub Pages로 바로 배포할 수 있는 정적 사이트예요.
 
 - `index.html`: 메인 (Hero · About · Selected Projects · Skills · Contact)
-- `work.html`: 작업물 전체 (웹사이트·앱 74 · 기획전 57 · AI 이미지 63 · 광고 94)
+- `work.html`: 작업물 전체 (웹사이트·앱 74 · 상세페이지 6 · 기획전 57 · AI 이미지 63 · 광고 94)
 - `data/works.js`: 작업물 목록 (제목, 분류, 이미지 경로, 링크)
 - `images/`: 작업 이미지 (`<분류>/` 썸네일, `<분류>/full/` 크게 보기용)
 - `assets/`: 스타일과 스크립트
